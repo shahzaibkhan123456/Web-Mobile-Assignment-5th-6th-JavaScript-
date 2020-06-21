@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <!----------- Chapter 1  Task 6 --------->
+    
+    <h1>
+        Write Note:<input type="text" placeholder="write something"><button onclick="myFunction1()">Click Here For Note</button></h1>
+        <script>
+            function myFunction1() {
+              alert("Please Do Something More");
+            }
+            </script> 
+
+<!----------- Chapter 2 Task 1 & 2-------->
+
+<p><h1>Declared a variable</h1></p>
+
+<button onclick="myFunction2()">Click Here</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction2() {
+  var str1 = "SHAHZAIB ";
+  var str2 = "KHAN";
+  var res = str1.concat(str2);
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+
+
+<br>
+<!----------- Chapter 2 Task 4-------->
+
+<h1>Student Bio Data</h1>
+<button onclick="myFunction3()">Student Bio</button>
+
+<br>
+
+
+<script>
+    function myFunction3(){
+        var name = "Abu Bakar Khan";
+        var age = "15 Year Old";
+        var data = "Certified Mobile Web Application Developer";
+        var res = name.concat(age);
+  alert( "Abu Bakar Khan")
+  alert( "15 Year Old")
+  alert( "Certified Mobile Web Application Developer")
+        
+    }
+</script>
+
+
+<br>
+
+<!----------- Chapter 2 Task 5-------->
+
+
+<button onclick="myFunction4()">Click Here</button>
+<script>
+    function myFunction4(){
+    alert( "PIZZA \n PIZZ \n PIZ \n PI \n P")
+    }
+
+</script>
+
+<br>
+<br>
+
+<!----------- Chapter 2 Task 6-------->
+
+<button onclick="myFunction5()">Email</button>
+<script>
+    function myFunction5(){
+        var email = "my email address is example@gmail.com"
+    alert("my email address is example@gmail.com")
+    }
+
+</script>
+<br>
+<br>
+
+<!----------- Chapter 2 Task 7-------->
+<button onclick="myFunction6()">Book</button>
+<script>
+    function myFunction6(){
+        var book = "A smarter way to learn JavaScript"
+    alert(book)
+    }
+
+</script>
+
+<!----------- Chapter 5 Task 2-------->
+<ol><h2>legal variable</h2>
+    <li>Letters</li>
+    <li>Number</li>
+    <li>Dollar Sign($)</li>
+    <li>Underscore(_)</li>
+</ol>
+  
+<ol><h2>illegal variable</h2>
+<li>12abc</li>
+<li>abc12</li>
+<li>*Zee</li>
+<li>/</li>
+<li>*+</li>
+</ol>
+
+<!----------- Chapter 5 Task 3 (A,B,C,D,E)-------->
+<p>
+    <h1>Rules of naming JS variable</h1>
+    
+    
+Variable names can only contain Number, $,
+_ and _ .For example: $my_1stVariable
+For example $my_1stVariable <br>
+Variables must begin with a letter, $or
+_. For example $name, _name or name <br>
+Variable names are case sensitive <br>
+Variable names should not be JS Keywords
+</p>
+
+
+<!----------- Chapter 9 to 10 Task 6-------->
+<fieldset style="width:600px">
+    <legend><b>Student Input Section:</b></legend>
+    Name:<input type="text" id="txtName">   
+    Class:<input type="text" id="txtClass"> <br/><br/>
+    <table border="1">
+        <tr><td>English</td><td><input type="text" id="txtEnglish"></td></tr>
+        <tr><td>Kannada</td><td><input type="text" id="txtKannada"></td></tr>
+        <tr><td>Maths</td><td><input type="text" id="txtMaths"></td></tr>
+        <tr><td>Science</td><td><input type="text" id="txtScience"></td></tr>             
+    </table><br/><br/>
+    <input type="button" value="Get Result">
+</fieldset>
+
+<h2>Report Card</h2>
+
+<table border="1">
+    <tr><td>Name</td><td><input type="text" id="txtStudentName" readonly></td></tr>
+    <tr><td>Class</td><td><input type="text" id="txtStudentClass" readonly></td></tr>
+    <tr><td>Total Marks</td><td><input type="text" id="txtTotalMarks" readonly></td></tr>
+    <tr><td>Average Marks</td><td><input type="text" id="txtAvgMarks" readonly></td></tr>
+    <tr><td>Grade</td><td><input type="text" id="txtGrade" readonly></td></tr>
+    <tr><td>Remarks</td><td><input type="text" id="txtResult" readonly></td></tr>
+</table>
+
+
+<!-- ============Chapter 26 to 30========Task 5 -->
+
+<button id="click" type="button">CLICK ME</button>
+<p>
+    You got: <span id="result"></span>
+</p>
+<script>
+    document.getElementById('click').onclick = click;
+
+var heads = 0;
+var tails = 0;
+function click() {  
+    x = (Math.floor(Math.random() * 2) == 0);
+    if(x){
+    	flip("heads");
+    }else{
+        flip("tails");
+    }
+};
+function flip(coin) {
+    document.getElementById("result").innerHTML = coin;
+};
+
+</script>
+
+<script src="app.js"></script>  
+</body>
+
+</html>
